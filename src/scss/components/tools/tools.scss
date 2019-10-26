@@ -1,0 +1,46 @@
+.tools {
+  @include max(300px);
+  @include size;
+  @include box-mod;
+  @include list;
+  @include block-view;
+  display: flex;
+  flex-flow: column;
+
+  &__item {
+    @include box-mod;
+    @include size;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px;
+    box-shadow: none;
+    transition: box-shadow $regular-time;
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 2px rgb(117, 117, 117);
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+
+  &__sign {
+    flex: 0 1 30%;
+  }
+
+  &__text {
+    @include set-main-font;
+    flex: 0 1 70%;
+
+    &_bracket {
+      text-transform: uppercase;
+    }
+  }
+}

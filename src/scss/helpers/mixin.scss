@@ -1,0 +1,37 @@
+@mixin box-mod() {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+@mixin max($width: none, $height: none) {
+  max-width: $width;
+  max-height: $height;
+}
+
+@mixin min($width: none, $height: none) {
+  min-width: $width;
+  min-height: $height;
+}
+
+@mixin size($width: 100%, $height: auto) {
+  width: $width;
+  height: $height;
+}
+
+@mixin list() {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin set-main-font() {
+  font-family: $main-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $main-font-color;
+}
+
+@mixin block-view() {
+  background-color: $main-bg-color;
+  box-shadow: 0 0 5px 1px rgb(125,125,125);
+}
