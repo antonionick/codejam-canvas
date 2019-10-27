@@ -1,0 +1,36 @@
+.header {
+  @include box-mod;
+  @include size;
+  @include block-view;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0/*20px 20px 50px*/;
+
+  &__title {
+    @include set-main-font;
+    order: 2;
+    flex: 0 1 75%;
+    margin: 0;
+    font-size: 26px;
+    line-height: 30px;
+    color: $accent-color;
+  }
+
+  &__icon {
+    @include set-main-font;
+    order: 1;
+    font-size: 30px;
+    line-height: 34px;
+    transition: color $regular-time;
+
+    &:hover {
+      cursor: pointer;
+      color: $main-accent-font-color;
+    }
+
+    &:active {
+      color: $main-font-color;
+    }
+  }
+}
