@@ -1,15 +1,15 @@
 export default class Tools {
-	constructor (id) {
+	constructor(id) {
 		if (!id) throw new Error(`Id didn't passed!`);
 		this._component = document.getElementById(id);
 		this._current = null;
 	}
 
-	start () {
+	start() {
 		this._component.addEventListener('click', this._changeCurrent.bind(this));
 	}
 
-	getData () {
+	getData() {
 		return this._current.dataset.size;
 	}
 
@@ -17,7 +17,11 @@ export default class Tools {
 		return this._component;
 	}
 
-	_changeCurrent (e) {
+	get current() {
+		return this._current;
+	}
+
+	_changeCurrent(e) {
 		const elem = e.target.closest('.tools__item');
 		if (this._current) {
 			this._current.classList.remove('tools__item_active');
