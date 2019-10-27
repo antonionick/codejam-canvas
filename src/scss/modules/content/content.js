@@ -16,13 +16,26 @@ tool.getComponent().addEventListener('click', changeCanvas);
 
 function changeCanvas(e) {
 	const data = tool.getData();
+	canvas.getCanvas().classList.remove('canvas_draw');
 
+	chooseArction(data);
+}
+
+function chooseArction(data) {
 	if (data === '4') {
-		canvas.draw(smallArray);
+		canvas.fill(smallArray);
 	} else if (data === '32') {
-		canvas.draw(bigArray);
+		canvas.fill(bigArray);
 	} else if (data === '256') {
-		canvas.drawImage(image);
+		canvas.fillImage(image);
+	} else if (data === 'draw') {
+		canvas.getCanvas().classList.add('canvas_draw');
+		canvas.draw();
+	} else if (data === 'clear') {
+		clear();
 	}
 }
 
+function clear() {
+	canvas.reset();
+}
