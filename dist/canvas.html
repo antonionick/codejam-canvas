@@ -11,6 +11,7 @@
 <header class="header">
 	<h1 class="header__title">CodeJam-Canvas</h1>
 	<span class="header__icon"><i class="fas fa-bars"></i></span>
+	<span class="header__icon header__icon_setting"><i class="fas fa-ellipsis-v"></i></span>
 </header>
 
 <main>
@@ -88,27 +89,29 @@
 		</div>
 
 		<!--canvas-->
-		<div class="content__canvas"></div>
+		<canvas class="canvas" id="canvas">
+			Your browser doesn't support canvas. Please download modern browser, for example Google Chrome
+		</canvas>
 
 		<!--tools wrapper-->
 		<div class="content__tools-wrapper">
-			<ul class="tools content__tools">
+			<ul class="tools content__tools" id="tools_canvas">
 				<!--item-->
-				<li class="tools__item">
+				<li class="tools__item" data-size="4">
 					<span class="tools__sign-wrapper">
 						<span class="tools__sign"><i class="far fa-square"></i></span>
 					</span>
 					<span class="tools__text">4x4</span>
 				</li>
 				<!--item-->
-				<li class="tools__item">
+				<li class="tools__item" data-size="32">
 					<span class="tools__sign-wrapper">
 						<span class="tools__sign"><i class="far fa-square"></i></span>
 					</span>
 					<span class="tools__text">32x32</span>
 				</li>
 				<!--item-->
-				<li class="tools__item tools__item_active">
+				<li class="tools__item" data-size="256">
 					<span class="tools__sign-wrapper">
 						<span class="tools__sign"><i class="far fa-square"></i></span>
 					</span>

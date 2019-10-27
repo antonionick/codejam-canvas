@@ -14,7 +14,7 @@ module.exports = {
 		paths: PATHS,
 	},
 	entry: {
-		canvas: PATHS.src + '/canvas.js',
+		canvas: PATHS.src + '/main.js',
 	},
 	output: {
 		filename: `[name].js`,
@@ -85,7 +85,7 @@ module.exports = {
 			filename: './canvas.html',
 		}),
 		new CopyWebpackPlugin([
-			// {from: `${PATHS.src}/${PATHS.assets}/img`, to: `${PATHS.assets}/img`},
+			{from: `${PATHS.src}/data`, to: `data`},
 			{from: `${PATHS.src}/static`, to : `${PATHS.dist}/static`},
 		]),
 	],
