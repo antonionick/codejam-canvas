@@ -32,5 +32,9 @@
     &:active {
       color: $main-font-color;
     }
+
+    &_setting {
+      order: 3;
+    }
   }
 }

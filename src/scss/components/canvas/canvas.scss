@@ -1,0 +1,7 @@
+.canvas {
+  @include box-mod;
+  @include size(512px, 512px);
+  @include block-view;
+  display: block;
+  background-color: $main-bg-color;
+}
