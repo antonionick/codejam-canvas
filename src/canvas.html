@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>CodeJam-Canvas</title>
+	<link rel="shortcut icon" href="static/favicon.ico">
 </head>
 <body>
 <header class="header">
@@ -14,27 +15,104 @@
 
 <main>
 	<div class="content">
+		<!--tools wrapper tools-->
 		<div class="content__tools-wrapper">
 			<ul class="tools content__tools">
 				<!--item-->
 				<li class="tools__item">
-					<span class="tools__sign">icon</span>
-					<span class="tools__text">text stuf</span>
+					<span class="tools__sign-wrapper">
+						<span class="tools__sign"><i class="fas fa-fill-drip"></i></span>
+					</span>
+					<span class="tools__text">Paint bucket (P)</span>
 				</li>
 				<!--item-->
 				<li class="tools__item">
-					<span class="tools__sign">icon</span>
-					<span class="tools__text">stuf text</span>
+					<span class="tools__sign-wrapper">
+						<span class="tools__sign"><i class="fas fa-eye-dropper"></i></span
+						></span>
+					<span class="tools__text">Change color (C)</span>
 				</li>
 				<!--item-->
 				<li class="tools__item">
-					<span class="tools__sign">icon</span>
-					<span class="tools__text">stuf text</span>
+					<span class="tools__sign-wrapper">
+						<span class="tools__sign"><i class="fas fa-arrows-alt"></i></span>
+					</span>
+					<span class="tools__text">Move (M)</span>
 				</li>
 				<!--item-->
 				<li class="tools__item">
-					<span class="tools__sign">icon</span>
-					<span class="tools__text">stuf text</span>
+					<span class="tools__sign-wrapper">
+						<span class="tools__sign"><i class="fas fa-exchange-alt"></i></span>
+					</span>
+					<span class="tools__text">Transform (T)</span>
+				</li>
+			</ul>
+
+			<ul class="tools content__tools">
+				<!--item-->
+				<li class="tools__item">
+					<span class="tools__sign-wrapper">
+						<span class="tools__sign tools__sign_color"></span>
+					</span>
+					<span class="tools__text">Current color</span>
+				</li>
+				<!--item-->
+				<li class="tools__item">
+					<span class="tools__sign-wrapper">
+						<span class="tools__sign tools__sign_color"></span>
+					</span>
+					<span class="tools__text">Prev color</span>
+				</li>
+				<!--item red-->
+				<li class="tools__item">
+					<span class="tools__sign-wrapper">
+						<span class="tools__sign tools__sign_color tools__sign_color_red"></span>
+					</span>
+					<span class="tools__text">red</span>
+				</li>
+				<!--item blue-->
+				<li class="tools__item">
+					<span class="tools__sign-wrapper">
+						<span class="tools__sign tools__sign_color tools__sign_color_blue"></span>
+					</span>
+					<span class="tools__text">blue</span>
+				</li>
+				<!--item choose-->
+				<li class="tools__item">
+					<span class="tools__sign-wrapper">
+						<input class="tools__sign tools__sign_color" type="color">
+					</span>
+					<span class="tools__text">Choose color</span>
+				</li>
+			</ul>
+		</div>
+
+		<!--canvas-->
+		<div class="content__canvas"></div>
+
+		<!--tools wrapper-->
+		<div class="content__tools-wrapper">
+			<ul class="tools content__tools">
+				<!--item-->
+				<li class="tools__item">
+					<span class="tools__sign-wrapper">
+						<span class="tools__sign"><i class="far fa-square"></i></span>
+					</span>
+					<span class="tools__text">4x4</span>
+				</li>
+				<!--item-->
+				<li class="tools__item">
+					<span class="tools__sign-wrapper">
+						<span class="tools__sign"><i class="far fa-square"></i></span>
+					</span>
+					<span class="tools__text">32x32</span>
+				</li>
+				<!--item-->
+				<li class="tools__item tools__item_active">
+					<span class="tools__sign-wrapper">
+						<span class="tools__sign"><i class="far fa-square"></i></span>
+					</span>
+					<span class="tools__text">256x256</span>
 				</li>
 			</ul>
 		</div>

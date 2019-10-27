@@ -1,3 +1,28 @@
 .content {
+  @include box-mod;
+  @include size;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 100px 0 10px;
 
+  &__tools-wrapper {
+    display: flex;
+    flex-flow: column;
+    width: 250px;
+  }
+
+  &__tools {
+    margin-top: 50px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  &__canvas {
+    width: 512px;
+    height: 512px;
+    background-color: grey;
+  }
 }
