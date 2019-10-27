@@ -18,6 +18,7 @@
   "author": "Anton Golovko",
   "license": "ISC",
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.11.2",
     "autoprefixer": "^9.6.1",
     "copy-webpack-plugin": "^5.0.4",
     "css-loader": "^3.2.0",

@@ -1,8 +1,10 @@
 @import "~normalize.css";
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
 @import "assets/fonts/fonts.css";
 @import "scss/helpers/variables";
 @import "scss/helpers/mixin";
 
 @import "scss/components/tools/tools";
 
+@import "scss/modules/header/header";
 @import "scss/modules/content/content";
